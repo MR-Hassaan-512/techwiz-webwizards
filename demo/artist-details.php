@@ -117,12 +117,6 @@
                                             </li>
                                             <li class="dropdown-item">
                                                 <a href="javascript:void(0);" class="dropdown-link">
-                                                    <i class="la la-download"></i>
-                                                    <span>Download</span>
-                                                </a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a href="javascript:void(0);" class="dropdown-link">
                                                     <i class="la la-share-alt"></i>
                                                     <span>Share</span>
                                                 </a>
@@ -170,12 +164,7 @@
                                                     <span>Add to Playlist</span>
                                                 </a>
                                             </li>
-                                            <li class="dropdown-item">
-                                                <a href="javascript:void(0);" class="dropdown-link">
-                                                    <i class="la la-download"></i>
-                                                    <span>Download</span>
-                                                </a>
-                                            </li>
+                                             
                                             <li class="dropdown-item">
                                                 <a href="javascript:void(0);" class="dropdown-link">
                                                     <i class="la la-share-alt"></i>
@@ -227,12 +216,7 @@
                                                     <span>Add to Playlist</span>
                                                 </a>
                                             </li>
-                                            <li class="dropdown-item">
-                                                <a href="javascript:void(0);" class="dropdown-link">
-                                                    <i class="la la-download"></i>
-                                                    <span>Download</span>
-                                                </a>
-                                            </li>
+                                             
                                             <li class="dropdown-item">
                                                 <a href="javascript:void(0);" class="dropdown-link">
                                                     <i class="la la-share-alt"></i>
@@ -282,12 +266,7 @@
                                                     <span>Add to Playlist</span>
                                                 </a>
                                             </li>
-                                            <li class="dropdown-item">
-                                                <a href="javascript:void(0);" class="dropdown-link">
-                                                    <i class="la la-download"></i>
-                                                    <span>Download</span>
-                                                </a>
-                                            </li>
+                                             
                                             <li class="dropdown-item">
                                                 <a href="javascript:void(0);" class="dropdown-link">
                                                     <i class="la la-share-alt"></i>
@@ -338,12 +317,7 @@
                                                     <span>Add to Playlist</span>
                                                 </a>
                                             </li>
-                                            <li class="dropdown-item">
-                                                <a href="javascript:void(0);" class="dropdown-link">
-                                                    <i class="la la-download"></i>
-                                                    <span>Download</span>
-                                                </a>
-                                            </li>
+                                             
                                             <li class="dropdown-item">
                                                 <a href="javascript:void(0);" class="dropdown-link">
                                                     <i class="la la-share-alt"></i>
@@ -393,12 +367,7 @@
                                                     <span>Add to Playlist</span>
                                                 </a>
                                             </li>
-                                            <li class="dropdown-item">
-                                                <a href="javascript:void(0);" class="dropdown-link">
-                                                    <i class="la la-download"></i>
-                                                    <span>Download</span>
-                                                </a>
-                                            </li>
+                                             
                                             <li class="dropdown-item">
                                                 <a href="javascript:void(0);" class="dropdown-link">
                                                     <i class="la la-share-alt"></i>
@@ -448,12 +417,7 @@
                                                     <span>Add to Playlist</span>
                                                 </a>
                                             </li>
-                                            <li class="dropdown-item">
-                                                <a href="javascript:void(0);" class="dropdown-link">
-                                                    <i class="la la-download"></i>
-                                                    <span>Download</span>
-                                                </a>
-                                            </li>
+                                             
                                             <li class="dropdown-item">
                                                 <a href="javascript:void(0);" class="dropdown-link">
                                                     <i class="la la-share-alt"></i>
@@ -523,12 +487,7 @@
                                                     <span>Add to Playlist</span>
                                                 </a>
                                             </li>
-                                            <li class="dropdown-item">
-                                                <a href="javascript:void(0);" class="dropdown-link">
-                                                    <i class="la la-download"></i>
-                                                    <span>Download</span>
-                                                </a>
-                                            </li>
+                                             
                                             <li class="dropdown-item">
                                                 <a href="javascript:void(0);" class="dropdown-link">
                                                     <i class="la la-share-alt"></i>
@@ -578,12 +537,7 @@
                                                     <span>Add to Playlist</span>
                                                 </a>
                                             </li>
-                                            <li class="dropdown-item">
-                                                <a href="javascript:void(0);" class="dropdown-link">
-                                                    <i class="la la-download"></i>
-                                                    <span>Download</span>
-                                                </a>
-                                            </li>
+                                             
                                             <li class="dropdown-item">
                                                 <a href="javascript:void(0);" class="dropdown-link">
                                                     <i class="la la-share-alt"></i>
@@ -635,12 +589,7 @@
                                                     <span>Add to Playlist</span>
                                                 </a>
                                             </li>
-                                            <li class="dropdown-item">
-                                                <a href="javascript:void(0);" class="dropdown-link">
-                                                    <i class="la la-download"></i>
-                                                    <span>Download</span>
-                                                </a>
-                                            </li>
+                                             
                                             <li class="dropdown-item">
                                                 <a href="javascript:void(0);" class="dropdown-link">
                                                     <i class="la la-share-alt"></i>
@@ -690,12 +639,7 @@
                                                     <span>Add to Playlist</span>
                                                 </a>
                                             </li>
-                                            <li class="dropdown-item">
-                                                <a href="javascript:void(0);" class="dropdown-link">
-                                                    <i class="la la-download"></i>
-                                                    <span>Download</span>
-                                                </a>
-                                            </li>
+                                             
                                             <li class="dropdown-item">
                                                 <a href="javascript:void(0);" class="dropdown-link">
                                                     <i class="la la-share-alt"></i>
@@ -746,12 +690,7 @@
                                                     <span>Add to Playlist</span>
                                                 </a>
                                             </li>
-                                            <li class="dropdown-item">
-                                                <a href="javascript:void(0);" class="dropdown-link">
-                                                    <i class="la la-download"></i>
-                                                    <span>Download</span>
-                                                </a>
-                                            </li>
+                                             
                                             <li class="dropdown-item">
                                                 <a href="javascript:void(0);" class="dropdown-link">
                                                     <i class="la la-share-alt"></i>
@@ -801,12 +740,7 @@
                                                     <span>Add to Playlist</span>
                                                 </a>
                                             </li>
-                                            <li class="dropdown-item">
-                                                <a href="javascript:void(0);" class="dropdown-link">
-                                                    <i class="la la-download"></i>
-                                                    <span>Download</span>
-                                                </a>
-                                            </li>
+                                             
                                             <li class="dropdown-item">
                                                 <a href="javascript:void(0);" class="dropdown-link">
                                                     <i class="la la-share-alt"></i>
@@ -856,12 +790,7 @@
                                                     <span>Add to Playlist</span>
                                                 </a>
                                             </li>
-                                            <li class="dropdown-item">
-                                                <a href="javascript:void(0);" class="dropdown-link">
-                                                    <i class="la la-download"></i>
-                                                    <span>Download</span>
-                                                </a>
-                                            </li>
+                                             
                                             <li class="dropdown-item">
                                                 <a href="javascript:void(0);" class="dropdown-link">
                                                     <i class="la la-share-alt"></i>

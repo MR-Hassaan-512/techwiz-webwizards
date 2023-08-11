@@ -470,11 +470,7 @@
                                                 <i class="la la-plus"></i>
                                             </a>
                                         </li>
-                                        <li class="dropdown-item">
-                                            <a href="javascript:void(0);" class="dropdown-link">
-                                                <i class="la la-download"></i>
-                                            </a>
-                                        </li>
+                                        
                                         <li class="dropdown-item">
                                             <a href="javascript:void(0);" class="dropdown-link">
                                                 <i class="la la-share-alt"></i>
@@ -511,11 +507,7 @@
                                                 <i class="la la-plus"></i>
                                             </a>
                                         </li>
-                                        <li class="dropdown-item">
-                                            <a href="javascript:void(0);" class="dropdown-link">
-                                                <i class="la la-download"></i>
-                                            </a>
-                                        </li>
+                                        
                                         <li class="dropdown-item">
                                             <a href="javascript:void(0);" class="dropdown-link">
                                                 <i class="la la-share-alt"></i>
@@ -555,11 +547,7 @@
                                                 <i class="la la-plus"></i>
                                             </a>
                                         </li>
-                                        <li class="dropdown-item">
-                                            <a href="javascript:void(0);" class="dropdown-link">
-                                                <i class="la la-download"></i>
-                                            </a>
-                                        </li>
+                                        
                                         <li class="dropdown-item">
                                             <a href="javascript:void(0);" class="dropdown-link">
                                                 <i class="la la-share-alt"></i>
@@ -596,11 +584,7 @@
                                                 <i class="la la-plus"></i>
                                             </a>
                                         </li>
-                                        <li class="dropdown-item">
-                                            <a href="javascript:void(0);" class="dropdown-link">
-                                                <i class="la la-download"></i>
-                                            </a>
-                                        </li>
+                                        
                                         <li class="dropdown-item">
                                             <a href="javascript:void(0);" class="dropdown-link">
                                                 <i class="la la-share-alt"></i>
@@ -641,11 +625,7 @@
                                                 <i class="la la-plus"></i>
                                             </a>
                                         </li>
-                                        <li class="dropdown-item">
-                                            <a href="javascript:void(0);" class="dropdown-link">
-                                                <i class="la la-download"></i>
-                                            </a>
-                                        </li>
+                                        
                                         <li class="dropdown-item">
                                             <a href="javascript:void(0);" class="dropdown-link">
                                                 <i class="la la-share-alt"></i>
@@ -685,11 +665,7 @@
                                                 <i class="la la-plus"></i>
                                             </a>
                                         </li>
-                                        <li class="dropdown-item">
-                                            <a href="javascript:void(0);" class="dropdown-link">
-                                                <i class="la la-download"></i>
-                                            </a>
-                                        </li>
+                                        
                                         <li class="dropdown-item">
                                             <a href="javascript:void(0);" class="dropdown-link">
                                                 <i class="la la-share-alt"></i>

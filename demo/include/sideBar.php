@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Seo Meta -->
     <meta name="description" content="Stream vibes - Online Music Streaming App Template">
     <meta name="keywords" content="music template, music app, music web app, responsive music app, music, themeforest, html music app template, css3, html5">
@@ -33,7 +33,7 @@
     <![endif]-->
 </head>
 
-
+<?php include "conn.php"; ?>
 
 
 <!-- Begin | Loading [[ Find at scss/framework/base/loader/loader.scss ]] -->
@@ -335,7 +335,7 @@
         <li class="dropdown fade-in">
             <a href="javascript:void(0);" class="d-flex align-items-center py-2" role="button" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="avatar avatar-sm avatar-circle"><img src="../assets/images/users/thumb.jpg" alt="user"></div>
-                <span class="pl-2">Halo Admin</span>
+                <span class="pl-2">Hello  </span>
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
                 <a class="dropdown-item" href="profile.php"><i class="ion-md-contact"></i> <span>Profile</span></a>
