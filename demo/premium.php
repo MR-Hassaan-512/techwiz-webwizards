@@ -28,14 +28,15 @@
                     <div class="col-xl-2 col-md-4 mb-4 mb-md-0"></div>
         <div class="col-xl-6 col-md-4 mb-4 mb-md-0">
 <div class="plan-card text-left px-sm-5 py-sm-4 p-3">
-    <h2 class="text-primary mb-4"> Ads <span class="text-warning">Free</span></h2>
-       <p class="text-secondary mt-2">⭐ Access all free songs and app features <br> <br> ⭐ No Ads between songs</p>
+    <h2 class="text-primary mb-4"> Premium</h2>
+       <p class="text-secondary mt-2">⭐ Access all free songs and app features <br> <br> ⭐ No Ads between songs <br><br>⭐ Create playlist & access analytics <br><br> ⭐Listen paid song once & purchase
+</p>
        <h4 class="text-primary">Yearly Subscription</h4>
-       <form action="submit.php" method="POST">
+       <form action="submit2.php" method="POST">
         <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="<?php echo $publishableKey; ?>"
-        data-amount="4000"
+        data-amount="6000"
         data-name="StreamVibe Basic Subscription"
-        data-descrption="Basic Package Streaming subsciption Payment"
+        data-descrption="Premium Package Streaming subsciption Payment"
         data-image="../assets/images/logos/favicon.png"
         data-currency="USD"
         >

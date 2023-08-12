@@ -7,9 +7,9 @@ $token =$_POST['stripeToken'];
 
 $invoice = \stripe\Charge::create(
     array(
-        "amount" => 4000,
+        "amount" => 6000,
         "currency" => "USD",
-        "description" => "Basic Package Streaming subsciption Payment",
+        "description" => "Premium Package Streaming subsciption Payment",
         "source" => $token,
     )
     );
