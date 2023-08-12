@@ -84,9 +84,7 @@
         <li class="nav-item">
             <a href="music.php" class="nav-link"><i class="la la-music"></i><span>Free Music</span></a>
         </li>
-        <li class="nav-item">
-            <a href="video.php" class="nav-link"><i class="la la-camera"></i><span>Free Movies</span></a>
-        </li>
+        
         <li class="nav-item">
             <a href="artists.php" class="nav-link"><i class="la la-microphone"></i><span>Artists</span></a>
         </li>
@@ -99,14 +97,12 @@
         <li class="nav-item">
             <a href="history.php" class="nav-link"><i class="la la-history"></i><span>History</span></a>
         </li>
-        <li class="nav-item nav-header">Your Movies</li>
+        <li class="nav-item nav-header">Extra</li>
 
         <li class="nav-item">
-            <a href="favorites.php" class="nav-link"><i class="la la-heart-o"></i><span>Favorites</span></a>
+            <a href="contact.php" class="nav-link"><i class="la la-phone"></i><span>Contact</span></a>
         </li>
-        <li class="nav-item">
-            <a href="history.php" class="nav-link"><i class="la la-history"></i><span>History</span></a>
-        </li>
+        
         
     </ul>
 </nav>
