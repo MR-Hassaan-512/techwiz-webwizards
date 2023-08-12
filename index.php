@@ -10,10 +10,10 @@ if (isset($_POST['submitbtn'])){
    $exists =false;
    if(($password == $confirmPassword ) && $exists==false){
     $sql = "INSERT INTO `users` ( `name`,`email`, `password`) VALUES ('$name','$email', '$password')";
-    $result = mysqli_query($conn,$sql);
+    $result = mysqli_query($GLOBALS["conn"],$sql);
     if($result){
         $showAlert = true;
-        header("Location: index2.php");
+        header("Location: ./demo/login.php");
     }
    }
 }
@@ -122,7 +122,7 @@ if($showAlert){
             <div class="col-lg-4 p-3" style="    border: 4px solid #999;
                           border-radius: 20px 10px;
                        box-shadow: 14px 14px 28px #555;">
-                <form action="index.php" method="post">
+                <form action="" method="post">
                     <div class="mb-3">
                         <label for="username" class="form-label   "
                             style="color:#ED441D; text-shadow:2px 2px 4px #555; font-size:20px;">User Name</label>
@@ -153,13 +153,15 @@ if($showAlert){
 
                     <button type="submit" name="submitbtn" class="btn btn-outline-danger col-md-12"
                         style="transition:.5s;">Sign Up</button>
-                        <p>Already have an account??<a href="./demo/index2.php">Log in</a></p>
+                        <p>Already have an account??<a href="./demo/login.php" class="load-page btn btn-air btn-bold btn-pill " style="transition:.5s; font-size:12px">Login</a></p>
+
                 </form>
             </div>
             <div class="col-lg-4"></div>
         </div>
         <div class="pt-4 mb-5 text-center">
-                 <a href="./demo/home.php" class="load-page btn btn-air btn-bold btn-pill btn-outline-danger" target="_blank">Go
+               
+                 <a href="./demo/home.php" class="load-page btn btn-air btn-bold btn-pill btn-outline-danger" style="transition:.5s;" target="_blank">Go
                     as a Guest Mode</a>
         </div>
     </div>

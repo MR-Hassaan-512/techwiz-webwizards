@@ -1622,8 +1622,8 @@ body.theme-dark #footer:after {
 }
 
 .plan-info-card, .plan-card {
-  border: 2px solid #00c746;
-  border-radius: .5rem;
+box-shadow:5px 5px 5px 5px rgba(255, 87, 26, 0.575);
+
 }
 
 #footer {

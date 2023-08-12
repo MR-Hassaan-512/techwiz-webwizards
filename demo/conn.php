@@ -3,8 +3,8 @@ $server="localhost";
 $username="root";
 $password="";
 $database="streamvibe";
-$conn= mysqli_connect($server,$username,$password,$database);
-if(!$conn){
+$GLOBALS["conn"]= mysqli_connect($server,$username,$password,$database);
+if(!$GLOBALS["conn"]){
     die ("Error".mysqli_connecterror());
 }
 ?>
