@@ -1,5 +1,33 @@
 
+<?php
 
+include 'conn.php';
+
+
+
+
+if(isset($_POST['send'])){
+    $name = $_POST['fullName'];
+    $email = $_POST['emailAdress'];
+    $contact = $_POST['contact'];
+    $address = $_POST['address'];
+    $message = $_POST['message'];
+
+    $query = "insert into contact(name,email,contact,address,message)
+     values('$name','$email','$contact','$address','$message')";
+
+    $run = mysqli_query($GLOBALS["conn"],$query);
+if($run) 
+{
+    echo "<script> alert('DATA inserted CONGRACTULATION.....!')
+window.location.href = 'contact.php';
+</script>";
+} else {
+echo "Data Not Updated !!";
+}
+}
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,9 +66,14 @@
                                 <input class="form-control valid" name="emailAdress" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email" required>
                             </div>
                         </div>
+                        <div class="col--12 mt-3">
+                            <div class="form-group">
+                                <input class="form-control valid" name="Contact" id="Contact" type="Contact" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Contact'" placeholder="Contact Number" required>
+                            </div>
+                        </div>
                         <div class="col-12 mt-3">
                             <div class="form-group">
-                                <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject" required>
+                                <input class="form-control" name="Adress" id="Adress" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Adress'" placeholder="Enter Adress" required>
                             </div>
                         </div>
                         <div class="col-12 mt-3">

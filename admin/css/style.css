@@ -1,0 +1,23 @@
+/* orange #ED441D
+blue #0B299B
+light #58EBF2 */
+.nav-link  p{
+    color: #0B299B;
+}
+.nav-link p:hover{
+ color: #ED441D;
+ transition: .3s;
+}
+.nav-icon{
+color: #0B299B;
+}
+.content-wrapper h1,p{
+    color: #0B299B;
+}
+.content-wrapper h3{
+    color: #ED441D;
+}
+.content .btn{
+    border: 1px solid #ED441D;
+    color: #ED441D;
+}

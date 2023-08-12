@@ -1,25 +1,37 @@
 <?php
-if (isset($_POST['submitbtn'])){
-   $showAlert= false;
-   include './demo/conn.php';
+include ('./demo/conn.php');
 
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $password = $_POST["password"];
-    $confirmPassword = $_POST["confirmPassword"];
-   $exists =false;
-   if(($password == $confirmPassword ) && $exists==false){
-    $sql = "INSERT INTO `users` ( `name`,`email`, `password`) VALUES ('$name','$email', '$password')";
-    $result = mysqli_query($GLOBALS["conn"],$sql);
-    if($result){
-        $showAlert = true;
-        header("Location: ./demo/login.php");
-    }
+if(isset($_POST['submit'])){
+
+   $name = mysqli_real_escape_string($GLOBALS["conn"], $_POST['name']);
+   $email = mysqli_real_escape_string($GLOBALS["conn"],  $_POST['email']);
+   $pass = $_POST['password'];
+   $cpass = $_POST['cpassword'];
+   $user_type = $_POST['user_type'];
+
+   $select = " SELECT * FROM users WHERE email = '$email' && password = '$pass' ";
+
+   $result = mysqli_query($GLOBALS["conn"], $select);
+
+   if(mysqli_num_rows($result) > 0){
+
+      $error[] = 'user already exist!';
+
+   }else{
+
+      if($pass != $cpass){
+         $error[] = 'password not matched!';
+      }else{
+         $insert = "INSERT INTO users(name, email, password, useradmin) VALUES('$name','$email','$pass','$user_type')";
+         mysqli_query($GLOBALS["conn"], $insert);
+         header('location:./demo/login.php');
+      }
    }
-}
-  
-?>
 
+};
+
+
+?>
 
 
 <!DOCTYPE html>
@@ -67,8 +79,10 @@ if (isset($_POST['submitbtn'])){
 
 <body>
     <style>
+
     body {
         background: url("assets/images/banner/index.png") center no-repeat;
+        
     }
 
     #hb-content {
@@ -122,13 +136,19 @@ if($showAlert){
             <div class="col-lg-4 p-3" style="    border: 4px solid #999;
                           border-radius: 20px 10px;
                        box-shadow: 14px 14px 28px #555;">
-                <form action="" method="post">
+                <!-- <form action="" method="post">
                     <div class="mb-3">
                         <label for="username" class="form-label   "
                             style="color:#ED441D; text-shadow:2px 2px 4px #555; font-size:20px;">User Name</label>
                         <input type="text" class="form-control" placeholder="name" id="username" name="name">
 
                     </div>
+                    <label for="username" class="form-label   "
+                            style="color:#ED441D; text-shadow:2px 2px 4px #555; font-size:20px;">User/Admin</label>
+                    <select name="user_type" class="form-control">
+         <option value="user">user</option>
+         <option value="admin" >admin</option>
+      </select><br>
                     <div class="mb-3">
                         <label for="email" class="form-label"
                             style="color:#ED441D; text-shadow:2px 2px 4px #555; font-size:20px;">Email</label>
@@ -155,7 +175,27 @@ if($showAlert){
                         style="transition:.5s;">Sign Up</button>
                         <p>Already have an account??<a href="./demo/login.php" class="load-page btn btn-air btn-bold btn-pill " style="transition:.5s; font-size:12px">Login</a></p>
 
-                </form>
+                </form> -->
+                <form action="" method="post">
+      <h3>register now</h3>
+      <?php
+      if(isset($error)){
+         foreach($error as $error){
+            echo '<span class="error-msg">'.$error.'</span>';
+         };
+      };
+      ?>
+      <input type="text" name="name" class="form-control" required placeholder="enter your name"><br>
+      <input type="email" name="email" class="form-control"  required placeholder="enter your email"><br>
+      <input type="password" name="password" class="form-control"  required placeholder="enter your password"><br>
+      <input type="password" name="cpassword" class="form-control"  required placeholder="confirm your password"><br>
+      <select name="user_type" class="form-control">
+         <option value="user">user</option>
+         <option value="admin" >admin</option>
+      </select><br>
+      <input type="submit" name="submit" value="register now" class="btn btn-oultine-danger"><br>
+      <p>already have an account? <a href="./demo/login.php" class="load-page btn btn-air btn-bold btn-pill " style="transition:.5s; font-size:12px">Login</a></p>
+   </form>
             </div>
             <div class="col-lg-4"></div>
         </div>

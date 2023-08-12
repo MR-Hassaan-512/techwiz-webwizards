@@ -9,13 +9,26 @@ if ($_SERVER["REQUEST_METHOD"]=="POST"){
     $sql = "Select * from users where email = '$email' AND password='$password'";
     $result = mysqli_query($GLOBALS["conn"],$sql);
     $num = mysqli_num_rows($result);
-    if($num == 1 ){
-        $showalert = true;
-        session_start();
-        $_SESSION['loggedin']=true;
-        $_SESSION['name']=$name;
-        header("location:./home.php");
-    }
+    if(mysqli_num_rows($result) > 0){
+
+        $row = mysqli_fetch_array($result);
+  
+        if($row['useradmin'] == 'admin'){
+  
+           $_SESSION['admin_name'] = $row['name'];
+           header('location:../admin/streamvibe.php');
+  
+        }elseif($row['useradmin'] == 'user'){
+  
+           $_SESSION['user_name'] = $row['name'];
+           header('location:../demo/home.php');
+  
+        }
+       
+     }else{
+        $error[] = 'incorrect email or password!';
+     }
+
   
 }
   
@@ -123,7 +136,7 @@ if($showalert){
             <div class="col-lg-4 p-3" style="    border: 4px solid #999;
                           border-radius: 20px 10px;
                        box-shadow: 14px 14px 28px #555;">
-                <form action="" method="post">
+                <!-- <form action="" method="post">
                     
                     <div class="mb-3">
                         <label for="email" class="form-label"
@@ -142,7 +155,24 @@ if($showalert){
 
                     <button type="submit" name="submitbtn" class="btn btn-outline-danger col-md-12"
                         style="transition:.5s;">Log-In</button>
-                </form>
+                </form> -->
+
+                <form action="" method="post">
+      <h3 class="text-center">login now</h3>
+      <?php
+      if(isset($error)){
+         foreach($error as $error){
+            echo '<span class="error-msg">'.$error.'</span>';
+         };
+      };
+      ?>
+      <input type="email" class="form-control" name="email" required placeholder="enter your email">
+      <br>
+      <input type="password" class="form-control" name="password" required placeholder="enter your password">
+      <br>
+      <input type="submit"  name="login" value="login now" class="btn" style="color: #ED441D;border:1px solid #ED441D">
+      <p>don't have an account? <a href="../index.php" class="text-secondary">register now</a></p>
+   </form>
             </div>
             <div class="col-lg-4"></div>
         </div>
