@@ -1,4 +1,5 @@
 <?php require('config.php');
+header("Location: ./home.php");
 
 \stripe\stripe::setVerifySslCerts(false);
 
@@ -14,6 +15,7 @@ $invoice = \stripe\Charge::create(
     )
     );
 echo "<pre>";
-print_r($invoice);
+print_r($invoice) ; 
+
 ?>
 

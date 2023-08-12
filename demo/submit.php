@@ -14,6 +14,6 @@ $invoice = \stripe\Charge::create(
     )
     );
 echo "<pre>";
-print_r($invoice);
+print_r($invoice);header("Location: ./home.php");
 ?>
 
